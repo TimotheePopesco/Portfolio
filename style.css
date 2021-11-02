@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #DDDDDD;
+  font-family: sans-serif;
+  color: #111111;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: #DDDDDD;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+}
+header nav {
+  background-color: #980a0a;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+header nav div {
+  text-align: center;
+}
+header nav div button {
+  background-color: #980a0a;
+  padding: 3%;
+  border: #980a0a;
+  font-size: 24px;
+  outline: none;
+}
+
+.boutonclaire {
+  color: #DDDDDD;
+  font-size: 24px;
+  margin-left: 0;
+  padding: 3%;
+  border: none;
+  cursor: pointer;
+}
+
+.boutonsombre {
+  color: #DDDDDD;
+  font-size: 24px;
+  margin-right: 1%;
+  margin-left: 0.1%;
+  padding: 3%;
+  border: none;
+  cursor: pointer;
+}
+
+.theme {
+  background-color: black;
+  color: #DDDDDD;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  text-align: justify;
+}
+
+.important {
+  font-weight: bold;
+}
+
+.intro {
+  padding: 5% 12%;
+}
+.intro p {
+  font-size: 24px;
+  padding-top: 5%;
+}
+
+.cv {
+  height: 100%;
+}
+.cv div {
+  width: 100%;
+  text-align: center;
+}
+.cv img {
+  border: 2px solid black;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.approfondir {
+  padding: 5% 12%;
+}
+.approfondir p {
+  font-size: 24px;
+  padding-top: 5%;
+}
+
+.competences {
+  padding-top: 10%;
+  padding-left: 40%;
+
+}
+.competences .mySlides {
+  display: none;
+}
+.competences .imag {
+  width: 25%;
+}
+.competences .prev, .competences .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #980a0a;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  margin: 5% 0;
+}
+.competences .prev:hover, .competences .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.competences .text {
+  font-size: 32px;
+  width: 80%;
+  text-align: justify;
+  margin-left: -25%;
+  margin-top: 5%;
+}
+.competences .points {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+.competences .dot {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 20vh;
+}
+.competences .active, .competences .dot:hover {
+  background-color: #980a0a;
+}
+.competences .fondue {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fondue {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.projets {
+  padding-top: 5%;
+  height: 90vh;
+  margin-bottom: 15%;
+}
+
+.ptexte {
+  margin-left: 10%;
+  height: 25vh;
+  width: 80%;
+}
+.ptexte h2 {
+  margin: 0 5%;
+  width: 100%;
+}
+.ptexte p {
+  margin: 2% 5%;
+  font-size: 16px;
+}
+
+.mesprojets {
+  display: grid;
+  grid-template-rows: 25vh 25vh;
+  grid-template-columns: 40vw 40vw;
+  gap: 5%;
+  max-width: 100%;
+  margin-left: 3%;
+}
+
+.p1 {
+  width: 40vw;
+  margin: 5% 5%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  height: 25vh;
+}
+.p1 h2 {
+  margin: 0 5%;
+  width: 100%;
+  font-size: 20px;
+}
+.p1 p {
+  margin: 2% 5%;
+  font-size: 10px;
+  width: 40%;
+  float: left;
+}
+.p1 a {
+  color: #980a0a;
+  font-weight: bold;
+  font-size: 10px;
+  margin-left: 15%;
+}
+.p1 .p1b {
+  float: right;
+}
+
+footer {
+  background-color: #980a0a;
+  padding: 2%;
+  text-align: center;
+  font-size: 24px;
+  color: #DDDDDD;
+  margin-top: 5%;
+}
+@media only screen and (max-width: 767px) {
+	p{
+		font-size: 8px;
+		text-align: justify;
+  }
+}
+ @media only screen and (min-width: 768px) and (max-width: 1050px) {
+	p{
+		font-size: 12px;
+		text-align: justify;
+
+	}
+}
+
+/*# sourceMappingURL=style.css.map */

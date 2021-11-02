@@ -1,0 +1,268 @@
+// Style Géneréral
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #DDDDDD;
+  font-family: sans-serif;
+  color: #111111;
+}
+
+// On s'occupe des liens
+a{
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: #DDDDDD;
+}
+// On s'occupe du header, de la nav barre
+header{
+    padding: 0;
+    margin: 0;
+
+    nav{
+          background-color: #980a0a;
+          width: 100%; 
+          display: grid;
+          grid-auto-flow: column;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          position: fixed;
+        
+          div{
+              text-align: center;
+
+              button{
+                  background-color: #980a0a;
+                  padding: 3%;
+                  border: #980a0a;
+                  font-size: 24px;
+                  outline: none;
+              }
+        }
+    }
+}
+
+// Les styles des boutons du mode sombre
+
+.boutonclaire{
+color: #DDDDDD;
+font-size: 24px;
+margin-left: 0;
+padding: 3%;
+border: none;
+cursor: pointer;
+}
+.boutonsombre{
+color: #DDDDDD;
+font-size: 24px;
+margin-right: 1%;
+margin-left: 0.1%;
+padding: 3%;
+border: none;
+cursor: pointer;
+}
+
+// On crée le mode sombre
+.theme{
+background-color: black;
+color: #DDDDDD;
+}
+
+// On s'occupe des titres et des paragraphes
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 64px;
+}
+h2 {
+    font-size: 32px;
+}
+p{
+  text-align: justify;
+
+}
+
+// La class important pour mettre les éléments en gras
+.important{
+  font-weight: bold;
+}
+
+
+
+          //Page 1 : Qui suis-je 
+
+// La classe intro pour mettre en forme la première section
+
+.intro{
+  padding: 5% 12%;
+
+  p{
+      font-size: 24px;
+      padding-top: 5%;
+  }
+}
+
+// La classe cv pour mettre en forme la section contenant le cv
+.cv{
+  height: 100%;
+
+  div{
+      width: 100%;
+      text-align: center;
+  }
+      img{
+          border: 2px solid black; 
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          max-width: 100% ;
+      }
+}
+// La classe approfondir pour mettre en forme la troisième section
+
+.approfondir{
+  padding: 5% 12%;
+  
+  p{
+      font-size: 24px;
+      padding-top: 5%;
+  }
+}
+
+
+      // Page 2 : Mes compétences
+
+// On met en forme la section compétence
+.competences{
+  padding-top: 10%;
+  padding-left: 40%;
+  min-height: 150vh;
+  .mySlides {
+    display: none;
+}
+.imag {
+  width: 25%;
+  
+}
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #980a0a;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  margin: 5% 0;
+}
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+.text {
+  font-size: 32px;
+  width: 80%;
+  text-align: justify;
+  margin-left: -25%;
+  margin-top: 5%;
+}
+
+.points{
+  margin-left: 8%;
+  margin-top: 5%;
+}
+.dot {
+cursor: pointer;
+height: 24px;
+width: 24px;
+margin: 0 2px;
+background-color: #999999;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+margin-bottom: 20vh;
+}
+.active, .dot:hover {
+background-color: #980a0a;
+}
+.fondue {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+}
+
+
+@keyframes fondue {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+      // Page 3 : Mes Projets
+
+// On met en forme la section projet
+.projets {
+padding-top: 5%;
+height: 90vh;
+margin-bottom: 15%;
+}
+.ptexte{
+  margin-left: 10%;
+  height: 25vh;
+  width: 80%;
+  h2{
+    margin: 0 5%;
+    width: 100%;
+  }
+  p{
+    margin: 2% 5%;
+    font-size: 24px;
+  }
+}
+.mesprojets{
+  display: grid;
+  grid-template-rows:  25vh  25vh;
+  grid-template-columns: 40vw 40vw;
+  gap: 5%;
+  max-width: 100%;
+  margin-left: 3%;
+}
+
+.p1{
+  width: 40vw;
+  margin: 5% 5%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  height: 25vh;
+
+  h2{
+    margin: 0 5%;
+    width: 100%;
+  }
+  p{
+    margin: 2% 5%;
+    font-size: 20px;
+    width: 40%;
+    float: left;
+  }
+  a{
+    color: #980a0a;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 15%;
+  }
+  .p1b{
+    float: right;
+  }
+}
+
+
+// On met en forme le footer
+footer{
+    background-color: #980a0a;
+    padding: 2%;
+    text-align: center;
+    font-size: 24px;
+    color: #DDDDDD; 
+    margin-top: 5%;
+}
